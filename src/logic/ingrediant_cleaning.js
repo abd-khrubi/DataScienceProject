@@ -112,7 +112,6 @@ function clean_oils(name, category) {
 function clean_nlp(name, category) {
     let tagger = posTagger();
     let verb_pos = ['VB', 'VBD', 'VBG', 'VBN', 'VBD', 'VBZ'];
-
     let pos = tagger.tagSentence(name);
     let cleaned_pos = pos.filter(word => !verb_pos.includes(word.pos));
     let cleaned_word = cleaned_pos.map(word => word.value);
@@ -194,12 +193,92 @@ function clean_tokens(name, category) {
         'pineappl': 'pineapple',
         'brocc': 'broccoli',
         'cauli': 'cauliflower',
+        'potato': '',
+        'rice': '',
     };
 
     for (let token in tokens) {
         let r = RegExp(token);
         if (r.exec(name) != null) {
             return tokens[token];
+        }
+    }
+    return name;
+}
+
+function clean_redundant(name, category) {
+    let redundant = [
+		'ground',
+		'fresh',
+		'crushed',
+		'powder',
+		'granulated',
+		'hungarian',
+		'dried',
+		'leaves',
+		'extra',
+		'virgin',
+		'roasted',
+		'pure',
+		'extra virgin',
+		'flakes',
+		'seeds',
+		'fine',
+		'neutral',
+		'smoked',
+		'kosher',
+		'cracked',
+		'dehydrated',
+		'red',
+		'hot',
+		'dry',
+		'dark',
+		'brown',
+		'crushed',
+		'Diamond',
+		'Crystal',
+		'light',
+		'brown',
+		'sorghum',
+		'white',
+		'coarse',
+		'toasted',
+		'blanched',
+		'threads',
+		'freshly',
+		'all purpose',
+		'warm',
+		'hot',
+		'filtered',
+		'juice',
+		'orange',
+		'sprouts',
+		'head',
+		'minced',
+		'hearts',
+		'roma',
+		'chopped',
+		'spring',
+		'wedge',
+		'small',
+		'sweet',
+		'green',
+		'floret',
+		'baby',
+		'baking',
+		'medium',
+		'leaves',
+		'leaf',
+		'garnish',
+		'chips',
+
+		'slices',
+		'whole',
+		'ripe',
+	];
+    for (let word in redundant) {
+        if (name.includes(word)) {
+            name = name.replace(word, '');
         }
     }
     return name;
@@ -233,6 +312,7 @@ function cleanIngredient(name, category) {
 		reduce_categories,
 		clean_tokens,
 		clean_nuts,
+        clean_redundant,
 		clean_nlp,
     ];
     for (let filter in filters) {

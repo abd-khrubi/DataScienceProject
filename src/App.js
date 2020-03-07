@@ -52,7 +52,6 @@ function App() {
                     {/*<UserCreateButton/>*/}
                     <MainPage value={124}/>
                 </header>
-
             </div>
         </Waiter>
     );

@@ -2,18 +2,17 @@
   "name": "projectjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://abd-khrubi.github.io/NodeTest",
+  "homepage": "http://abd-khrubi.github.io/DataScienceProject",
   "dependencies": {
+    "@emotion/core": "latest",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "node-nlp": "^4.2.1",
     "react": "^16.13.0",
     "react-animate-on-change": "^2.2.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
     "react-spinners": "^0.8.0",
-    "react-wait": "^0.3.0",
     "wink-pos-tagger": "^2.2.2"
   },
   "scripts": {
