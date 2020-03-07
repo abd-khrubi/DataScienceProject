@@ -28,7 +28,9 @@ export class UserInputStage extends React.Component {
     }
 
     componentDidMount() {
+        this.startWaiting();
         this.sababa.buildVector();
+        this.sababa.incrementWeightTop();
         console.log(this.sababa)
         // this.startWaiting();
 
@@ -64,24 +66,57 @@ export class UserInputStage extends React.Component {
         setTimeout(() => this.stopWaiting(), 1000);
     }
 
+    compileIngredients(ingredients) {
+        let res = [];
+        for (let k in Object.keys(ingredients)) {
+            let ingredient = ingredients[k];
+            let txt = '';
+            if (ingredient['quantity'] !== null) {
+                txt += ingredient['quantity'];
+            }
+            if (ingredient['unit'] != null) {
+                txt += ' ' + ingredient['unit'] + ' ';
+            }
+            txt += ingredient['name'];
+            res.push(<p>{txt}</p>);
+        }
+        return res;
+    }
+
+    vote(score) {
+        this.sababa.incrementWeightUser(this.state.recipe, score);
+        this.setState({recipe: this.state.data.recipes[Math.floor(Math.random() * this.state.data.recipes.length)]});
+    }
+
     render() {
         if (this.state.isWaiting) {
             return this.drawWaiting();
         } else {
+            let url = this.state.recipe['page_url'];
+            let img = this.state.recipe.image_url.length === 0 ? yummly_image : this.state.recipe.image_url;
+            let ingredients = this.compileIngredients(this.state.recipe.ingredients);
             return (
-                <div className='recipes'>
-                    <img
-                        src={this.state.recipe.image_url.length === 0 ? yummly_image : this.state.recipe.image_url}
-                        alt='d'
-                        width='200' height='200'
-                        onClick={() => {
-                            this.test();
-                        }}
-                    />
-                    <div>
-                        <button onClick={() => this.test()}>&#128078;</button>
-                        <button onClick={() => this.test()}>&#128077;</button>
+                <div className="recipes">
+                    <a href={url} target='_blank' rel="noopener noreferrer">
+                        <img src={img}
+                             alt={this.state.recipe.name}/>
+                    </a>
+                    <p>{this.state.recipe['name']}</p>
+                    <div className="ings">
+                        <ul>
+                            <h3>Ingredients</h3>
+                            <div className='ingredients'>
+                                {ingredients}
+                            </div>
+                        </ul>
                     </div>
+                    <div className="fnt">
+                        <i className="fa fa-thumbs-down"
+                           onClick={() => this.vote(-1)}/>
+                        <i className="fa fa-thumbs-up"
+                           onClick={() => this.vote(1)}/>
+                    </div>
+
                 </div>
             );
         }

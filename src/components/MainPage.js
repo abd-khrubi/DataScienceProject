@@ -1,7 +1,6 @@
 import React from 'react';
-import {MeatStage, PiquantStage, CarbStage} from "./Stages.js";
+import {CarbStage, MeatStage, PiquantStage} from "./Stages.js";
 import {UserInputStage} from "./UserInputStage";
-import data from '../data/recipes/yummly_pork_rice_spicy';
 
 class MainPage extends React.Component {
 
@@ -37,6 +36,16 @@ class MainPage extends React.Component {
         })
     }
 
+
+    removeSettings(key) {
+        if (key === 'all') {
+            localStorage.clear();
+        } else {
+            localStorage.removeItem(key);
+        }
+    }
+
+
     render() {
         let stageDiv;
         switch (this.state.stage) {
@@ -53,22 +62,44 @@ class MainPage extends React.Component {
                 stageDiv = <PiquantStage choose={(x) => this.choosePiquant(x)}/>;
                 break;
             case 3:
-                stageDiv = <UserInputStage protein={this.state.meat} carb={this.state.carb} piquant={this.state.piquant}/>;
-                // stageDiv = <UserInputStage protein='beef' carb='bread' piquant='mild'/>;
+                stageDiv =
+                    <UserInputStage protein={this.state.meat} carb={this.state.carb} piquant={this.state.piquant}/>;
                 break;
         }
 
-        // let o = JSON.parse(localStorage.getItem('test'));
         return (
             <div className='main-page'>
                 {stageDiv}
-                {/*<button className={'increment'}*/}
-                {/*        onClick={() => {*/}
-                {/*            this.setState({stage: this.state.stage + 1})*/}
-                {/*        }}>Next*/}
-                {/*</button>*/}
-                {/*<p>{JSON.stringify(this.state, null, '\t')}</p>*/}
-                {/*<p>{JSON.stringify(o, null, '\t')}</p>*/}
+
+                <div className="btnDiv">
+                    <button className="prb" onClick={() => {
+                        this.setState({
+                            stage: 0,
+                            meat: null,
+                            carb: null,
+                            piquant: null
+                        });
+                    }
+                    }
+                    >
+                        Change settings
+                    </button>
+                    <button className="prb" onClick={() => {
+                        if (window.confirm('Are you sure you wish to remove all preferences?')) {
+                            this.removeSettings('all');
+                        }
+                    }}
+                    >
+                        Remove all preferences
+                    </button>
+                    {this.state.piquant && <button className="prb"
+                                                   onClick={() => this.removeSettings(
+                                                       this.state.meat + '_' + this.state.carb + '_' + this.state.piquant
+                                                   )}
+                    >
+                        Remove current setting preferences
+                    </button>}
+                </div>
             </div>
         );
     }
