@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DataScienceProject/static/css/main.31002b37.chunk.css",
-    "main.js": "/DataScienceProject/static/js/main.64886b96.chunk.js",
-    "main.js.map": "/DataScienceProject/static/js/main.64886b96.chunk.js.map",
+    "main.css": "/DataScienceProject/static/css/main.d995bbe2.chunk.css",
+    "main.js": "/DataScienceProject/static/js/main.33a18502.chunk.js",
+    "main.js.map": "/DataScienceProject/static/js/main.33a18502.chunk.js.map",
     "runtime-main.js": "/DataScienceProject/static/js/runtime-main.d425d4ff.js",
     "runtime-main.js.map": "/DataScienceProject/static/js/runtime-main.d425d4ff.js.map",
     "static/js/2.b5279a45.chunk.js": "/DataScienceProject/static/js/2.b5279a45.chunk.js",
     "static/js/2.b5279a45.chunk.js.map": "/DataScienceProject/static/js/2.b5279a45.chunk.js.map",
     "index.html": "/DataScienceProject/index.html",
-    "precache-manifest.134fbcbba3f04952a262fca188a5967d.js": "/DataScienceProject/precache-manifest.134fbcbba3f04952a262fca188a5967d.js",
+    "precache-manifest.223cf826660a2ad37fca191fc2452914.js": "/DataScienceProject/precache-manifest.223cf826660a2ad37fca191fc2452914.js",
     "service-worker.js": "/DataScienceProject/service-worker.js",
-    "static/css/main.31002b37.chunk.css.map": "/DataScienceProject/static/css/main.31002b37.chunk.css.map",
+    "static/css/main.d995bbe2.chunk.css.map": "/DataScienceProject/static/css/main.d995bbe2.chunk.css.map",
     "static/js/2.b5279a45.chunk.js.LICENSE.txt": "/DataScienceProject/static/js/2.b5279a45.chunk.js.LICENSE.txt",
     "static/media/beef.jpg": "/DataScienceProject/static/media/beef.f4d9c732.jpg",
     "static/media/bread.jpg": "/DataScienceProject/static/media/bread.af1ccbcf.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.d425d4ff.js",
     "static/js/2.b5279a45.chunk.js",
-    "static/css/main.31002b37.chunk.css",
-    "static/js/main.64886b96.chunk.js"
+    "static/css/main.d995bbe2.chunk.css",
+    "static/js/main.33a18502.chunk.js"
   ]
 }
