@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/NodeTest/static/css/main.5f361e03.chunk.css",
-    "main.js": "/NodeTest/static/js/main.c1c34fde.chunk.js",
-    "main.js.map": "/NodeTest/static/js/main.c1c34fde.chunk.js.map",
-    "runtime-main.js": "/NodeTest/static/js/runtime-main.c223b1c4.js",
-    "runtime-main.js.map": "/NodeTest/static/js/runtime-main.c223b1c4.js.map",
-    "static/js/2.3f4eaecd.chunk.js": "/NodeTest/static/js/2.3f4eaecd.chunk.js",
-    "static/js/2.3f4eaecd.chunk.js.map": "/NodeTest/static/js/2.3f4eaecd.chunk.js.map",
-    "index.html": "/NodeTest/index.html",
-    "precache-manifest.9e7af63bf497eef03ac2469b2b0b6ac5.js": "/NodeTest/precache-manifest.9e7af63bf497eef03ac2469b2b0b6ac5.js",
-    "service-worker.js": "/NodeTest/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/NodeTest/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.3f4eaecd.chunk.js.LICENSE.txt": "/NodeTest/static/js/2.3f4eaecd.chunk.js.LICENSE.txt"
+    "main.css": "/DataScienceProject/static/css/main.5f361e03.chunk.css",
+    "main.js": "/DataScienceProject/static/js/main.fc8cf5bc.chunk.js",
+    "main.js.map": "/DataScienceProject/static/js/main.fc8cf5bc.chunk.js.map",
+    "runtime-main.js": "/DataScienceProject/static/js/runtime-main.d425d4ff.js",
+    "runtime-main.js.map": "/DataScienceProject/static/js/runtime-main.d425d4ff.js.map",
+    "static/js/2.41a4276a.chunk.js": "/DataScienceProject/static/js/2.41a4276a.chunk.js",
+    "static/js/2.41a4276a.chunk.js.map": "/DataScienceProject/static/js/2.41a4276a.chunk.js.map",
+    "index.html": "/DataScienceProject/index.html",
+    "precache-manifest.39dec10f8957c7bbec420eb7215361a0.js": "/DataScienceProject/precache-manifest.39dec10f8957c7bbec420eb7215361a0.js",
+    "service-worker.js": "/DataScienceProject/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/DataScienceProject/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.41a4276a.chunk.js.LICENSE.txt": "/DataScienceProject/static/js/2.41a4276a.chunk.js.LICENSE.txt",
+    "static/media/yummly_logo.png": "/DataScienceProject/static/media/yummly_logo.eb1028dc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c223b1c4.js",
-    "static/js/2.3f4eaecd.chunk.js",
+    "static/js/runtime-main.d425d4ff.js",
+    "static/js/2.41a4276a.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.c1c34fde.chunk.js"
+    "static/js/main.fc8cf5bc.chunk.js"
   ]
 }
