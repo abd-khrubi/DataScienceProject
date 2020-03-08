@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/DataScienceProject/static/css/main.d995bbe2.chunk.css",
-    "main.js": "/DataScienceProject/static/js/main.33a18502.chunk.js",
-    "main.js.map": "/DataScienceProject/static/js/main.33a18502.chunk.js.map",
+    "main.js": "/DataScienceProject/static/js/main.0f972d9c.chunk.js",
+    "main.js.map": "/DataScienceProject/static/js/main.0f972d9c.chunk.js.map",
     "runtime-main.js": "/DataScienceProject/static/js/runtime-main.d425d4ff.js",
     "runtime-main.js.map": "/DataScienceProject/static/js/runtime-main.d425d4ff.js.map",
     "static/js/2.b5279a45.chunk.js": "/DataScienceProject/static/js/2.b5279a45.chunk.js",
     "static/js/2.b5279a45.chunk.js.map": "/DataScienceProject/static/js/2.b5279a45.chunk.js.map",
     "index.html": "/DataScienceProject/index.html",
-    "precache-manifest.223cf826660a2ad37fca191fc2452914.js": "/DataScienceProject/precache-manifest.223cf826660a2ad37fca191fc2452914.js",
+    "precache-manifest.3a57b6785467237277d7cae244cc90f8.js": "/DataScienceProject/precache-manifest.3a57b6785467237277d7cae244cc90f8.js",
     "service-worker.js": "/DataScienceProject/service-worker.js",
     "static/css/main.d995bbe2.chunk.css.map": "/DataScienceProject/static/css/main.d995bbe2.chunk.css.map",
     "static/js/2.b5279a45.chunk.js.LICENSE.txt": "/DataScienceProject/static/js/2.b5279a45.chunk.js.LICENSE.txt",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.d425d4ff.js",
     "static/js/2.b5279a45.chunk.js",
     "static/css/main.d995bbe2.chunk.css",
-    "static/js/main.33a18502.chunk.js"
+    "static/js/main.0f972d9c.chunk.js"
   ]
 }
