@@ -43,6 +43,14 @@ class MainPage extends React.Component {
         } else {
             localStorage.removeItem(key);
         }
+        this.setState({
+            stage: 0,
+            meat: null,
+            carb: null,
+            piquant: null
+        });
+        alert('Your preferences were reset.');
+        console.log(this);
     }
 
 
