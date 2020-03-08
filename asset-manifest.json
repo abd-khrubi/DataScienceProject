@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/DataScienceProject/static/css/main.d995bbe2.chunk.css",
-    "main.js": "/DataScienceProject/static/js/main.0f972d9c.chunk.js",
-    "main.js.map": "/DataScienceProject/static/js/main.0f972d9c.chunk.js.map",
+    "main.js": "/DataScienceProject/static/js/main.f73a7b33.chunk.js",
+    "main.js.map": "/DataScienceProject/static/js/main.f73a7b33.chunk.js.map",
     "runtime-main.js": "/DataScienceProject/static/js/runtime-main.d425d4ff.js",
     "runtime-main.js.map": "/DataScienceProject/static/js/runtime-main.d425d4ff.js.map",
     "static/js/2.b5279a45.chunk.js": "/DataScienceProject/static/js/2.b5279a45.chunk.js",
     "static/js/2.b5279a45.chunk.js.map": "/DataScienceProject/static/js/2.b5279a45.chunk.js.map",
     "index.html": "/DataScienceProject/index.html",
-    "precache-manifest.3a57b6785467237277d7cae244cc90f8.js": "/DataScienceProject/precache-manifest.3a57b6785467237277d7cae244cc90f8.js",
+    "precache-manifest.0a2b0d294393af7aff3702288cf2b627.js": "/DataScienceProject/precache-manifest.0a2b0d294393af7aff3702288cf2b627.js",
     "service-worker.js": "/DataScienceProject/service-worker.js",
     "static/css/main.d995bbe2.chunk.css.map": "/DataScienceProject/static/css/main.d995bbe2.chunk.css.map",
     "static/js/2.b5279a45.chunk.js.LICENSE.txt": "/DataScienceProject/static/js/2.b5279a45.chunk.js.LICENSE.txt",
     "static/media/beef.jpg": "/DataScienceProject/static/media/beef.f4d9c732.jpg",
     "static/media/bread.jpg": "/DataScienceProject/static/media/bread.af1ccbcf.jpg",
     "static/media/chicken.jpg": "/DataScienceProject/static/media/chicken.f93c66e2.jpg",
-    "static/media/mild.jpg": "/DataScienceProject/static/media/mild.4c091368.jpg",
+    "static/media/mild.jpg": "/DataScienceProject/static/media/mild.a5bf6622.jpg",
     "static/media/pasta.jpg": "/DataScienceProject/static/media/pasta.6f9b4f4a.jpg",
     "static/media/pork.jpg": "/DataScienceProject/static/media/pork.09c6804a.jpg",
     "static/media/potatoes.jpg": "/DataScienceProject/static/media/potatoes.658b52cc.jpg",
     "static/media/rice.jpg": "/DataScienceProject/static/media/rice.4efd27f8.jpg",
-    "static/media/spicy.jpg": "/DataScienceProject/static/media/spicy.8df596ab.jpg",
+    "static/media/spicy.jpg": "/DataScienceProject/static/media/spicy.c3ddbeb2.jpg",
     "static/media/yummly_logo.png": "/DataScienceProject/static/media/yummly_logo.eb1028dc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d425d4ff.js",
     "static/js/2.b5279a45.chunk.js",
     "static/css/main.d995bbe2.chunk.css",
-    "static/js/main.0f972d9c.chunk.js"
+    "static/js/main.f73a7b33.chunk.js"
   ]
 }
